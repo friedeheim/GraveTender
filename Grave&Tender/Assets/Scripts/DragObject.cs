@@ -8,10 +8,9 @@ public class DragObject : MonoBehaviour
     private float mZCoord;
 
     // Adjust this multiplier to control the strength of movement along the z-axis
-    public float zMovementMultiplier = 0.01f;
+    public float zMovementMultiplier = 0.0001f;
 
-    // Damping factor to reduce sensitivity of movement
-    public float dampingFactor = 0.1f;
+
 
     void OnMouseDown()
     {
@@ -34,8 +33,7 @@ public class DragObject : MonoBehaviour
         // Calculate the amount of z-axis movement based on vertical mouse movement
         float zMovement = (Input.mousePosition.y - (Screen.height * 0.5f)) * zMovementMultiplier;
 
-        // Apply damping factor to reduce sensitivity
-        zMovement *= dampingFactor;
+
 
         newPosition.y = transform.position.y; // Restricting y movement
         newPosition.z += zMovement; // Add the z-axis movement

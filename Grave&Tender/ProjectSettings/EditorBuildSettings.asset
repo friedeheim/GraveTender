@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GebetDalassen.unity
     guid: add7b04db5e9547419fd116468a471e7
+  - enabled: 1
+    path: Assets/Scenes/GrabsteinReinigen.unity
+    guid: 74b51fb0821035342b98119601379dc6
   m_configObjects: {}
