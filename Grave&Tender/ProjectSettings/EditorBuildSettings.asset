@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 82704a94bfa3a5c4c84382b2f45217a2
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/MainScene01.unity
     guid: 4de9393a0c0b0bc40804876ab8726a99
   - enabled: 1
     path: Assets/Scenes/Part1BlumenPflanzen.unity
