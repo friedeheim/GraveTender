@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/GrabsteinReinigen.unity
+- path: Assets/Scenes/Part3BlumenPflanzen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

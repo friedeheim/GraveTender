@@ -19,6 +19,6 @@ public class GrabsteinReinigenVerlassen : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("MainScene"); // Hier den Namen der Zielszene angeben
+        SceneManager.LoadScene("MainScene01"); // Hier den Namen der Zielszene angeben
     }
 }
