@@ -7,6 +7,6 @@ public class RunBlumenbeet : MonoBehaviour
 {
     public void PlayBlumenbeet()
     {
-        SceneManager.LoadScene("Part1BlumenPflanzen");
+        SceneManager.LoadScene("Part2BlumenPflanzen");
     }
 }
