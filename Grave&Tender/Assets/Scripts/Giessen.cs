@@ -4,31 +4,24 @@ using UnityEngine;
 
 public class Giessen : MonoBehaviour
 {
-    public GameObject objectToShow;
+    public GameObject objectToActivate;
+    public GameObject objectToDelete;
 
-    void OnParticleCollision(GameObject other)
+    private void OnParticleCollision(GameObject other)
     {
-
-        Debug.Log("Particle collision detected!");
-
-        // Überprüfen Sie, ob das getroffene Objekt das ist, das wir anzeigen möchten
-        if (other == objectToShow)
+        if (other.CompareTag("Waessern"))
         {
-            Debug.Log("Object to show was hit by particle!");
-
-            // Machen Sie das Objekt sichtbar
-            objectToShow.SetActive(true);
-        }
-
-
-        // Überprüfen Sie, ob das getroffene Objekt das ist, das wir anzeigen möchten
-        if (other == objectToShow)
-        {
-            // Machen Sie das Objekt sichtbar
-            objectToShow.SetActive(true);
+            // Rufen Sie die Methode ActivateAndDelete mit einer Verzögerung von 2 Sekunden auf
+            Invoke("ActivateAndDelete", 1f);
         }
     }
 
+    private void ActivateAndDelete()
+    {
+        // Aktiviere das GameObject objectToActivate
+        objectToActivate.SetActive(true);
 
-
+        // Löschen Sie das GameObject objectToDelete
+        Destroy(objectToDelete);
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StartWasser : MonoBehaviour
 {
-    private ParticleSystem particleSystem;
+    new private ParticleSystem particleSystem;
     private bool isPlaying = false;
 
     void Start()

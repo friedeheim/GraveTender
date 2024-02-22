@@ -19,6 +19,16 @@ public class GrabsteinReinigenVerlassen : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("MainScene01"); // Hier den Namen der Zielszene angeben
+        // Finde die Kamera mit dem Namen "Main Camera (Reinigen)"
+        GameObject cameraObject = GameObject.Find("Main Camera (Reinigen)");
+
+        // Überprüfen, ob die Kamera gefunden wurde
+        if (cameraObject != null)
+        {
+            // Deaktiviere die Kamera
+            cameraObject.SetActive(false);
+            
+        }
+       
     }
 }

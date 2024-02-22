@@ -13,7 +13,7 @@ public class FollowMouse : MonoBehaviour
         Vector3 mousePosition = Input.mousePosition;
 
         // Setze die z-Koordinate auf eine festgelegte Distanz vom Kameraobjekt und füge den Offset hinzu
-        mousePosition.z = 10f - zOffset;
+        mousePosition.z = 9.5f - zOffset;
 
         // Konvertiere die Bildschirmkoordinaten der Maus in Weltkoordinaten
         Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(mousePosition);

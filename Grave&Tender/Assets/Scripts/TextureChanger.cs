@@ -32,7 +32,11 @@ public class MaterialChanger : MonoBehaviour
         {
             // Überprüfen, ob die Maus über das Objekt wischt
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            // Kamera mit dem Namen "Main Camera (Reinigen)" finden
+            Camera myCamera = GameObject.Find("Main Camera (Reinigen)").GetComponent<Camera>();
+            // Ray von der Mausposition in Bezug auf die gefundenen Kamera erstellen
+            Ray ray = myCamera.ScreenPointToRay(Input.mousePosition);
+
 
             if (Physics.Raycast(ray, out hit))
             {
