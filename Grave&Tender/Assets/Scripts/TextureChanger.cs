@@ -37,7 +37,6 @@ public class MaterialChanger : MonoBehaviour
             // Ray von der Mausposition in Bezug auf die gefundenen Kamera erstellen
             Ray ray = myCamera.ScreenPointToRay(Input.mousePosition);
 
-
             if (Physics.Raycast(ray, out hit))
             {
                 // Überprüfen, ob das getroffene Objekt das GameObject ist, zu dem dieses Skript gehört
@@ -47,12 +46,6 @@ public class MaterialChanger : MonoBehaviour
                     ChangeMaterial(); // Ändere das Material des Objekts
                 }
             }
-        }
-
-        // Wenn die Zeit für das Aktivieren des Particle-Systems erreicht ist und der Benutzer über das Objekt gewischt hat
-        if (!particleSystemActivated && hasSwiped && Time.time - mouseDownTime >= 9f)
-        {
-            ActivateParticleSystem(); // Aktiviere das Particle-System
         }
     }
 
@@ -67,6 +60,16 @@ public class MaterialChanger : MonoBehaviour
             {
                 rend.material = newMaterials[materialIndex]; // Ändere das Material des Objekts
                 materialIndex++;
+
+                // Überprüfen, ob das letzte Material angewendet wurde
+                if (materialIndex == newMaterials.Length)
+                {
+                    // Hier das Material hinzufügen, bei dem das Partikelsystem aktiviert werden soll
+                    if (!particleSystemActivated && hasSwiped && rend.material.name == "Stein (Instance)") // Anpassen, um den korrekten Namen des Materials zu verwenden
+                    {
+                        ActivateParticleSystem(); // Aktiviere das Particle-System
+                    }
+                }
             }
         }
     }

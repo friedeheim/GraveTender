@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GrabsteinReinigenVerlassen : MonoBehaviour
 {
     private bool sceneChangeStarted = false;
+    public GameObject CanvasON;
+    public GameObject CanvasOFF;
 
     void Update()
     {
@@ -27,7 +29,8 @@ public class GrabsteinReinigenVerlassen : MonoBehaviour
         {
             // Deaktiviere die Kamera
             cameraObject.SetActive(false);
-            
+            CanvasOFF.gameObject.SetActive(false);
+            CanvasON.gameObject.SetActive(true);
         }
        
     }

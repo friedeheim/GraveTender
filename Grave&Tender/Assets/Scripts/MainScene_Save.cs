@@ -1,15 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class MainScene_Save : MonoBehaviour
-    
+public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    // Deine bestehenden Variablen und Logik
+    public Text textToShow;
 
-    void Awake()
+    // Wird aufgerufen, wenn die Maus über den Button schwebt
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        DontDestroyOnLoad(this.gameObject);
+        // Text sichtbar machen
+        textToShow.gameObject.SetActive(true);
+    }
+
+    // Wird aufgerufen, wenn die Maus den Button verlässt
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        // Text ausblenden
+        textToShow.gameObject.SetActive(false);
     }
 }
-
