@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +6,8 @@ public class GrabsteinReinigenVerlassen : MonoBehaviour
     private bool sceneChangeStarted = false;
     public GameObject CanvasON;
     public GameObject CanvasOFF;
+    public GameObject CameraON;
+    public GameObject CameraOFF;
 
     void Update()
     {
@@ -21,17 +21,20 @@ public class GrabsteinReinigenVerlassen : MonoBehaviour
 
     void ChangeScene()
     {
-        // Finde die Kamera mit dem Namen "Main Camera (Reinigen)"
-        GameObject cameraObject = GameObject.Find("Main Camera (Reinigen)");
-
-        // Überprüfen, ob die Kamera gefunden wurde
-        if (cameraObject != null)
+        // Überprüfen, ob die Kameraobjekte gültig sind
+        if (CameraOFF != null && CameraON != null)
         {
-            // Deaktiviere die Kamera
-            cameraObject.SetActive(false);
-            CanvasOFF.gameObject.SetActive(false);
-            CanvasON.gameObject.SetActive(true);
+            // Deaktiviere die "CameraOFF" und aktiviere die "CameraON"
+            CameraOFF.SetActive(false);
+            CameraON.SetActive(true);
+
+            // Aktiviere/deaktiviere Canvas entsprechend
+            CanvasOFF.SetActive(false);
+            CanvasON.SetActive(true);
         }
-       
+        else
+        {
+            Debug.LogError("Eine oder beide Kameraobjekte sind nicht zugewiesen.");
+        }
     }
 }

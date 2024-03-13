@@ -28,7 +28,7 @@ public class MaterialChanger : MonoBehaviour
         }
 
         // Wenn die linke Maustaste gedrückt wird und die erforderliche Zeit verstrichen ist
-        if (isMouseDown && Time.time - mouseDownTime >= changeTimes[materialIndex])
+        if (isMouseDown && materialIndex < changeTimes.Length && Time.time - mouseDownTime >= changeTimes[materialIndex])
         {
             // Überprüfen, ob die Maus über das Objekt wischt
             RaycastHit hit;

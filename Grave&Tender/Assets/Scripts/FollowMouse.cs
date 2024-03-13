@@ -7,6 +7,12 @@ public class FollowMouse : MonoBehaviour
     // Offset-Wert für die z-Richtung
     public float zOffset = 1f;
 
+    // Grenzen für die Bewegung des Objekts
+    public float minX = 20.10f;
+    public float maxX = 27.36f;
+    public float minZ = -3.33f;
+    public float maxZ = -0.55f;
+
     void Update()
     {
         // Erhalte die aktuelle Position der Maus im Bildschirmkoordinatensystem
@@ -18,8 +24,13 @@ public class FollowMouse : MonoBehaviour
         // Konvertiere die Bildschirmkoordinaten der Maus in Weltkoordinaten
         Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        // Setze die y-Koordinate auf eine feste Höhe, um sich nicht zu bewegen
+        // Setze die y-Koordinate auf die Höhe des Objekts, um sich nicht zu bewegen
         worldMousePosition.y = transform.position.y;
+
+        // Begrenze die Position des Objekts innerhalb der festgelegten Grenzen
+        float clampedX = Mathf.Clamp(worldMousePosition.x, minX, maxX);
+        float clampedZ = Mathf.Clamp(worldMousePosition.z, minZ, maxZ);
+        worldMousePosition = new Vector3(clampedX, transform.position.y, clampedZ);
 
         // Aktualisiere die Position des Objekts, um der Position der Maus zu folgen
         transform.position = worldMousePosition;
