@@ -381,6 +381,7 @@
 "Assets/DialogueEditor/Example/ExampleInputManager.cs"
 "Assets/Scripts/CameraSwitcher.cs"
 "Assets/Scripts/CharacterMovementAnimation.cs"
+"Assets/Scripts/ConversationStarter.cs"
 "Assets/Scripts/CursorManager.cs"
 "Assets/Scripts/CustomCursor.cs"
 "Assets/Scripts/DialogueManager.cs"
