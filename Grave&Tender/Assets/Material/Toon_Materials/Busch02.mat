@@ -25,11 +25,11 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _RimStepSmooth: 0.4
+    - _RimStepSmooth: 0
     m_Colors:
     - _BaseColor: {r: 0.30980393, g: 0.3764706, b: 0.18431373, a: 1}
     - _RimColor: {r: 0.30980393, g: 0.3764706, b: 0.18431373, a: 1}
-    - _SpecularColor: {r: 0.30980393, g: 0.3764706, b: 0.18431373, a: 1}
+    - _SpecularColor: {r: 0.18487324, g: 0.32089105, b: 1.0592737, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4071190132231038713
 MonoBehaviour:

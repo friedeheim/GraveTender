@@ -16,8 +16,8 @@ public class CharacterMovementAnimation : MonoBehaviour
     void Update()
     {
         // Bewegungsrichtung des Charakters
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        float horizontalInput = -Input.GetAxis("Horizontal");
+        float verticalInput = -Input.GetAxis("Vertical");
         Vector3 moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
 
         // Rotation des Charakters
@@ -30,7 +30,7 @@ public class CharacterMovementAnimation : MonoBehaviour
         Vector3 move = moveDirection * moveSpeed * Time.deltaTime;
         transform.Translate(move, Space.World);
 
-        // Animation abhängig von der Bewegung abspielen
+        // Animation abhï¿½ngig von der Bewegung abspielen
         if (moveDirection.magnitude > 0)
         {
             animator.SetBool("Walking", true);
