@@ -389,6 +389,7 @@
 "Assets/Scripts/DialogueManager.cs"
 "Assets/Scripts/DialogueTrigger.cs"
 "Assets/Scripts/DragObject.cs"
+"Assets/Scripts/EndScore.cs"
 "Assets/Scripts/FollowMouse.cs"
 "Assets/Scripts/GebetVerlassen.cs"
 "Assets/Scripts/Giessen.cs"
