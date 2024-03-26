@@ -403,6 +403,7 @@
 "Assets/Scripts/RunGebetDalassen.cs"
 "Assets/Scripts/RunGrabsteinReinigen.cs"
 "Assets/Scripts/RunUnkraut.cs"
+"Assets/Scripts/ScoreConversation.cs"
 "Assets/Scripts/StartWasser.cs"
 "Assets/Scripts/TextureChanger.cs"
 "Assets/Scripts/Trigger.cs"

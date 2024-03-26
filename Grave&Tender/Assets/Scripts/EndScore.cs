@@ -24,26 +24,6 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        // Load the scores from PlayerPrefs if they exist
-        if (PlayerPrefs.HasKey("GraveScore"))
-        {
-            graveScore = PlayerPrefs.GetInt("GraveScore");
-        }
-        if (PlayerPrefs.HasKey("ChildScore"))
-        {
-            childScore = PlayerPrefs.GetInt("ChildScore");
-        }
-    }
-
-    private void OnDestroy()
-    {
-        // Save the scores to PlayerPrefs when the object is destroyed
-        PlayerPrefs.SetInt("GraveScore", graveScore);
-        PlayerPrefs.SetInt("ChildScore", childScore);
-    }
-
     // Method to increase the grave score
     public void IncreaseGraveScore(int amount)
     {
