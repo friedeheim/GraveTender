@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 326
     height: 979.3334
-  m_MinSize: {x: 276, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 122
+  controlID: 102
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 52
+  controlID: 41
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 53
+  controlID: 42
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -241,15 +241,15 @@ MonoBehaviour:
     y: 0
     width: 1028.6666
     height: 580
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 16}
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -353,7 +353,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 626
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -496,9 +496,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d27e0000
-      m_LastClickedID: 32466
-      m_ExpandedIDs: 6cefffff727e0000d27e0000
+      m_SelectedIDs: 8e010400
+      m_LastClickedID: 262542
+      m_ExpandedIDs: 48adfdff1edcfdfff8e5fdff88f1fdffa001fefff22ffeff903afeffd246feffc074fefff48ffeff04aefeff80bcfeff06ccfeffb2d7feff44e7fefff405ffff7815ffffb225ffff8033ffffbc43ffff1456ffff9c63ffffee6fffffd87fffff6691ffff8ea2ffff34b0ffff44c1ffff12d0ffffecdfffffccebffff18f7ffff16faffffdce40000e0e400002cfe000030fe0000aa160100ae160100d0290100643301001248010016480100ae530100b2530100246b0100286b0100a2830100a6830100c89601005ca001000cb301005ab401005eb40100e4cb0100e8cb010066e401006ae401008cf7010020010200de100200e213020024150200443c0200743f02000a410200cc540200fe57020088590200386b0200c07402004276020032880200408a0200b89a02005e9b0200449f0200c2a102001ca602003eb30200e4b3020010b50200ccb70200acbe0200dacb02004ccc020080cc0200accd020066d00200ecd202003ed7020056e40200c8e40200f6e402001ae60200a4e80200e4ee0200acfc02000aff020040060300ac990300d8990300da9c0300de9c030086b503008ab5030054cd030058cd030056de03006ee1030034e20300dce203007ae40300dae8030076010400
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -866,9 +866,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1109.6045, y: 497.04315, z: 139.38455}
+    m_Target: {x: 960, y: 540, z: 0}
     speed: 2
-    m_Value: {x: 1109.6045, y: 497.04315, z: 139.38455}
+    m_Value: {x: 960, y: 540, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -916,15 +916,15 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.08985558, y: -0.022724604, z: 0.0020537593, w: 0.9956793}
     speed: 2
-    m_Value: {x: -0.08985559, y: 0.022724606, z: -0.0020537593, w: -0.9956793}
+    m_Value: {x: 0.08985685, y: -0.022724925, z: 0.0020537882, w: 0.9956933}
   m_Size:
-    m_Target: 747.3364
+    m_Target: 762.0671
     speed: 2
-    m_Value: 782.5512
+    m_Value: 762.0671
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 0.60069996
     m_SpeedNormalized: 0.29999998
@@ -991,7 +991,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Menu Images
+    - Assets/Material/Toon_Materials
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -999,16 +999,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Menu Images
+  - Assets/Material/Toon_Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\erdwa\Saved Games\GraveTender\Grave&Tender
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 77.666626}
-    m_SelectedIDs: e2800000
-    m_LastClickedID: 32994
-    m_ExpandedIDs: 00000000c6800000c8800000ca800000cc800000ce800000d0800000d480000000ca9a3b
+    scrollPos: {x: 0, y: 17.666626}
+    m_SelectedIDs: 9c6c0000
+    m_LastClickedID: 27804
+    m_ExpandedIDs: 000000007e6c0000806c0000826c0000846c0000866c0000886c00008a6c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1036,7 +1036,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c6800000c8800000ca800000cc800000ce800000d0800000d2800000d4800000
+    m_ExpandedIDs: 000000007e6c0000806c0000826c0000846c0000866c0000886c00008a6c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
