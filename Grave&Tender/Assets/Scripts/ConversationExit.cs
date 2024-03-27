@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DialogueEditor;
@@ -9,6 +11,9 @@ public class ConversationExit : MonoBehaviour
     private bool conversationStarted = false;
     public VariableUpdater variableUpdater; // Referenz auf das VariableUpdater-Skript
 
+    public Animator transition;
+    public float transitionTime = 1f;
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && !conversationStarted)
@@ -17,13 +22,13 @@ public class ConversationExit : MonoBehaviour
             conversationStarted = true;
             ConversationManager.Instance.StartConversation(myConversation);
 
-            // Überprüfen, ob die Variable in VariableUpdater auf 0 ist
+            // ï¿½berprï¿½fen, ob die Variable in VariableUpdater auf 0 ist
             if (variableUpdater.variable == 0)
             {
                 // Starte einen anderen Dialog
                 ConversationManager.Instance.StartConversation(alternativeConversation); // Hier kann ein anderer Dialog gestartet werden
 
-                // Warte fünf Sekunden, bevor die nächste Szene geladen wird
+                // Warte fï¿½nf Sekunden, bevor die nï¿½chste Szene geladen wird
                 Invoke("LoadNextScene", 5f);
             }
         }
@@ -33,14 +38,22 @@ public class ConversationExit : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Setze den Zustand zurück, wenn der Spieler den Collider verlässt
+            // Setze den Zustand zurï¿½ck, wenn der Spieler den Collider verlï¿½sst
             conversationStarted = false;
         }
     }
 
     void LoadNextScene()
     {
-        // Lade die nächste Szene im Szenen-Manager
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // Lade die nï¿½chste Szene im Szenen-Manager
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    IEnumerator LoadLevel(int levelIndex){
+        transition.SetTrigger("Start");
+        
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(levelIndex);
     }
 }
