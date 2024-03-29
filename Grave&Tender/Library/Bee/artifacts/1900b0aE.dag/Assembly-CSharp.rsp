@@ -378,6 +378,7 @@
 "Assets/DialogueEditor/Assets/Scripts/UI/ConversationManager.cs"
 "Assets/DialogueEditor/Assets/Scripts/UI/UIConversationButton.cs"
 "Assets/DialogueEditor/Example/ExampleInputManager.cs"
+"Assets/Scenes/End.cs"
 "Assets/Scripts/BackgroundMusic.cs"
 "Assets/Scripts/ButtonSound.cs"
 "Assets/Scripts/CameraSwitcher.cs"
