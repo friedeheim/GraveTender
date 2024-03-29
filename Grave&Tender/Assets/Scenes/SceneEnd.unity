@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -396,9 +396,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dein Grab bleibt eine perfekt gepflegte Oase in einer langsam Zuwachsenden
-    Lichtung. Dein Sohn kommt schon l\xE4nger nicht mehr zu Besuch. Nur eine Frage
-    der Zeit dein Grab wieder der Natur angeh\xF6rt."
+  m_text: "Das Grab bleibt eine perfekt gepflegte Oase auf einer langsam zuwachsenden
+    Lichtung. Dein Kind kommt schon l\xE4nger nicht mehr zu Besuch. Es ist nur eine
+    Frage der Zeit, bis das Grab wieder der Natur angeh\xF6rt."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8fd3ff527ea250f43b03be4d3206212f, type: 2}
   m_sharedMaterial: {fileID: 1361866951170494499, guid: 8fd3ff527ea250f43b03be4d3206212f,
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -594,7 +594,7 @@ MonoBehaviour:
     vergessen sein werden. \nGrabsteine verk\xFCnden ihre Wahrheiten gerade noch
     vierzig Jahre, dann werden sie beseitigt und machen neuen Gr\xE4bern Platz. Generationen
     gehen vor\xFCber, w\xE4hrend die B\xE4ume \xFCberdauern; und alte Familien bringen
-    es h\xF6chstens auf eine Spanne von drei Eichen\"\n\n~Sir Thomas Browne"
+    es h\xF6chstens auf eine Spanne von drei Eichen.\"\n\n~Sir Thomas Browne"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8fd3ff527ea250f43b03be4d3206212f, type: 2}
   m_sharedMaterial: {fileID: 1361866951170494499, guid: 8fd3ff527ea250f43b03be4d3206212f,
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1324,8 +1324,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dein Grab geriet mit der Zeit in Vergessenheit. Du aber nicht. Generationen
-    sp\xE4ter werden noch deine Geschichten und Ratschl\xE4ge weitergegeben."
+  m_text: "Das Grab ger\xE4t mit der Zeit in Vergessenheit. Du aber nicht. Auch Generationen
+    sp\xE4ter werden noch Geschichten und Anekdoten \xFCber dich und deinen Vater
+    weitergegeben."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8fd3ff527ea250f43b03be4d3206212f, type: 2}
   m_sharedMaterial: {fileID: 1361866951170494499, guid: 8fd3ff527ea250f43b03be4d3206212f,
@@ -1360,7 +1361,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1862,8 +1863,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dein Sohn beh\xE4lt die Tradition und dein Grab bleibt besucht und gepflegt.
-    Auch Generationen sp\xE4ter werden hier neue und alte Geschiten erz\xE4hlt."
+  m_text: "Dein Kind beh\xE4lt die Tradition bei und besucht die Gr\xE4ber, um sie
+    zu pflegen. Auch Generationen sp\xE4ter werden hier neue Erinnerungen geschaffen
+    und sich an Vergangenes erinnert."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8fd3ff527ea250f43b03be4d3206212f, type: 2}
   m_sharedMaterial: {fileID: 1361866951170494499, guid: 8fd3ff527ea250f43b03be4d3206212f,
@@ -1898,7 +1900,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
