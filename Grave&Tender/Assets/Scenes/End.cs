@@ -36,13 +36,13 @@ public class ObjectActivator : MonoBehaviour
         {
             aboveNineObject.SetActive(true);
         }
-        else if (score >= 6 && score <= 9 && betweenSixAndNineObject != null)
-        {
-            betweenSixAndNineObject.SetActive(true);
-        }
         else if (score < 6 && belowSixObject != null)
         {
             belowSixObject.SetActive(true);
+        }
+        else
+        {
+            betweenSixAndNineObject.SetActive(true);
         }
     }
 }
