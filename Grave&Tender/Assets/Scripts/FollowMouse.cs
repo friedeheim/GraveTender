@@ -24,9 +24,6 @@ public class FollowMouse : MonoBehaviour
         // Konvertiere die Bildschirmkoordinaten der Maus in Weltkoordinaten
         Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        // Setze die y-Koordinate auf die Höhe des Objekts, um sich nicht zu bewegen
-        worldMousePosition.y = transform.position.y;
-
         // Begrenze die Position des Objekts innerhalb der festgelegten Grenzen
         float clampedX = Mathf.Clamp(worldMousePosition.x, minX, maxX);
         float clampedZ = Mathf.Clamp(worldMousePosition.z, minZ, maxZ);

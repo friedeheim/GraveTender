@@ -6,8 +6,7 @@ public class GrabsteinReinigenVerlassen : MonoBehaviour
     private bool sceneChangeStarted = false;
     public GameObject CanvasON;
     public GameObject CanvasOFF;
-    public GameObject CameraON;
-    public GameObject CameraOFF;
+    public Transform newCameraTransform;
 
     void Update()
     {
@@ -22,11 +21,11 @@ public class GrabsteinReinigenVerlassen : MonoBehaviour
     void ChangeScene()
     {
         // Überprüfen, ob die Kameraobjekte gültig sind
-        if (CameraOFF != null && CameraON != null)
+        if (CanvasOFF != null && CanvasON != null)
         {
             // Deaktiviere die "CameraOFF" und aktiviere die "CameraON"
-            CameraOFF.SetActive(false);
-            CameraON.SetActive(true);
+            Camera.main.transform.position = newCameraTransform.position;
+            Camera.main.transform.rotation = newCameraTransform.rotation;
 
             // Aktiviere/deaktiviere Canvas entsprechend
             CanvasOFF.SetActive(false);

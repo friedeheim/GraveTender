@@ -6,6 +6,7 @@ TagManager:
   tags:
   - interactable
   - Waessern
+  - Camera
   layers:
   - Default
   - TransparentFX
